@@ -1,1 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Lamington Hatchery | Underberg, KwaZulu-Natal</title>
+
+<meta name="description" content="Lamington Hatchery in Underberg, KwaZulu-Natal. Quality fertile hatching eggs and naturally raised chicks.">
+
+<style>
+:root{
+    --ink:#182014;
+    --ink2:#232d1c;
+    --olive:#354426;
+    --olive2:#566542;
+    --cream:#f6f3ea;
+    --paper:#fbfaf6;
+    --sand:#e8e2d3;
+    --gold:#b69a5e;
+    --muted:#72786b;
+    --white:#fff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    color:inherit;
+    text-decoration:none;
+}
+
+button{
+    font:inherit;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+.container{
+    width:min(1160px,88%);
+    margin:auto;
+}
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.nav{
+    position:fixed;
+    z-index:1000;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:20px 6vw;
+
+    color:white;
+
+    background:rgba(18,25,13,.68);
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+}
+
+.logo{
+    font-size:13px;
+    font-weight:900;
+    letter-spacing:.2em;
+}
+
+.logo small{
+    display:block;
+    margin-top:2px;
+
+    color:rgba(255,255,255,.58);
+
+    font-size:7px;
+    letter-spacing:.25em;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav-links a{
+    position:relative;
+
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+
+    color:rgba(255,255,255,.8);
+
+    transition:.25s ease;
+}
+
+.nav-links a::after{
+    content:"";
+
+    position:absolute;
+    left:0;
+    bottom:-7px;
+
+    width:0;
+    height:1px;
+
+    background:#ddc88e;
+
+    transition:.25s ease;
+}
+
+.nav-links a:hover{
+    color:white;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* ================================
+   HERO
+================================ */
+
+.hero{
+    position:relative;
+
+    min-height:100svh;
+
+    display:flex;
+    align-items:flex-end;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8,12,6,.12) 0%,
+            rgba(8,12,6,.18) 30%,
+            rgba(8,12,6,.72) 78%,
+            rgba(8,12,6,.95) 100%
+        ),
+        url("hero.jpg") center/cover no-repeat;
+}
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        90deg,
+        rgba(7,11,5,.3),
+        transparent 70%
+    );
+
+    pointer-events:none;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+
+    width:min(1160px,88%);
+    margin:auto;
+
+    padding:170px 0 65px;
+}
+
+.eyebrow{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:23px;
+
+    color:#ddc98d;
+
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+}
+
+.eyebrow::before{
+    content:"";
+
+    width:35px;
+    height:1px;
+
+    background:#ddc98d;
+}
+
+.hero h1{
+    max-width:900px;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:clamp(55px,8.5vw,108px);
+    line-height:.88;
+
+    font-weight:400;
+    letter-spacing:-.055em;
+}
+
+.hero-copy{
+    max-width:550px;
+    margin-top:28px;
+
+    color:rgba(255,255,255,.76);
+
+    font-size:14px;
+}
+
+.hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin-top:34px;
+}
+
+.btn{
+    min-height:52px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:0 25px;
+
+    border-radius:2px;
+
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+
+    transition:
+        transform .25s ease,
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-light{
+    background:white;
+    color:var(--ink);
+}
+
+.btn-dark{
+    border:1px solid rgba(255,255,255,.4);
+    color:white;
+}
+
+.btn-dark:hover{
+    background:white;
+    border-color:white;
+    color:var(--ink);
+}
+
+.hero-bottom{
+    display:flex;
+    gap:55px;
+
+    margin-top:65px;
+    padding-top:23px;
+
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.hero-stat strong{
+    display:block;
+
+    font-family:Georgia,serif;
+    font-size:27px;
+    font-weight:400;
+}
+
+.hero-stat span{
+    display:block;
+    margin-top:2px;
+
+    color:rgba(255,255,255,.52);
+
+    font-size:8px;
+    font-weight:800;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+}
+
+/* ================================
+   COMMON
+================================ */
+
+.section-tag{
+    margin-bottom:18px;
+
+    color:#77806d;
+
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+}
+
+.section-title{
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:clamp(43px,5.8vw,72px);
+    line-height:.95;
+
+    font-weight:400;
+    letter-spacing:-.045em;
+}
+
+.reveal{
+    opacity:0;
+    transform:translateY(25px);
+
+    animation:reveal .9s ease forwards;
+}
+
+@keyframes reveal{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ================================
+   INTRO
+================================ */
+
+.intro{
+    padding:125px 0;
+    background:var(--cream);
+}
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+
+    gap:85px;
+}
+
+.intro-text p{
+    max-width:520px;
+    margin-top:27px;
+
+    color:var(--muted);
+    font-size:14px;
+}
+
+.intro-text p + p{
+    margin-top:15px;
+}
+
+.intro-image{
+    position:relative;
+
+    height:590px;
+
+    overflow:hidden;
+}
+
+.intro-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:transform .8s ease;
+}
+
+.intro-image:hover img{
+    transform:scale(1.035);
+}
+
+.image-caption{
+    position:absolute;
+    right:18px;
+    bottom:18px;
+
+    padding:9px 13px;
+
+    background:rgba(15,20,11,.78);
+    color:white;
+
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+}
+
+/* ================================
+   OFFERINGS
+================================ */
+
+.offerings{
+    padding:120px 0;
+
+    background:var(--ink);
+    color:white;
+}
+
+.offer-header{
+    display:grid;
+    grid-template-columns:1fr 370px;
+    align-items:end;
+    gap:50px;
+
+    margin-bottom:48px;
+}
+
+.offer-header p{
+    color:rgba(255,255,255,.53);
+    font-size:13px;
+}
+
+.offer-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.offer-card{
+    position:relative;
+
+    min-height:470px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    padding:40px;
+
+    overflow:hidden;
+
+    isolation:isolate;
+}
+
+.offer-card::before{
+    content:"";
+
+    position:absolute;
+    z-index:-2;
+    inset:0;
+
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    transition:transform .8s ease;
+}
+
+.offer-card:nth-child(1)::before{
+    background-image:url("eggs.jpg");
+}
+
+.offer-card:nth-child(2)::before{
+    background-image:url("chicks.jpg");
+}
+
+.offer-card::after{
+    content:"";
+
+    position:absolute;
+    z-index:-1;
+    inset:0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(7,11,5,.03) 5%,
+            rgba(7,11,5,.18) 35%,
+            rgba(7,11,5,.94) 100%
+        );
+}
+
+.offer-card:hover::before{
+    transform:scale(1.06);
+}
+
+.offer-number{
+    position:absolute;
+    top:28px;
+    right:30px;
+
+    color:rgba(255,255,255,.58);
+
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.18em;
+}
+
+.offer-card h3{
+    font-family:Georgia,serif;
+
+    font-size:42px;
+    line-height:.98;
+
+    font-weight:400;
+    letter-spacing:-.025em;
+}
+
+.offer-card p{
+    max-width:460px;
+    margin-top:15px;
+
+    color:rgba(255,255,255,.7);
+
+    font-size:13px;
+}
+
+.offer-link{
+    display:inline-flex;
+    align-items:center;
+
+    width:max-content;
+
+    margin-top:23px;
+
+    color:#dfcb91;
+
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+/* ================================
+   WHY LAMINGTON
+================================ */
+
+.why{
+    padding:120px 0;
+
+    background:var(--paper);
+}
+
+.why-top{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+
+    margin-bottom:65px;
+}
+
+.why-top p{
+    max-width:490px;
+    align-self:end;
+
+    color:var(--muted);
+    font-size:14px;
+}
+
+.values-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    border-top:1px solid rgba(24,32,20,.15);
+}
+
+.value{
+    padding:38px 35px 10px 0;
+}
+
+.value + .value{
+    padding-left:35px;
+    border-left:1px solid rgba(24,32,20,.15);
+}
+
+.value-number{
+    margin-bottom:35px;
+
+    color:#8a8f82;
+
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.18em;
+}
+
+.value h3{
+    font-family:Georgia,serif;
+
+    font-size:30px;
+    line-height:1.05;
+    font-weight:400;
+}
+
+.value p{
+    margin-top:17px;
+
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+/* ================================
+   GALLERY
+================================ */
+
+.gallery{
+    padding:115px 0 105px;
+
+    background:#f1eee5;
+    overflow:hidden;
+}
+
+.gallery-heading{
+    width:min(1160px,88%);
+    margin:0 auto 35px;
+}
+
+.gallery-heading p{
+    max-width:520px;
+    margin-top:20px;
+
+    color:var(--muted);
+    font-size:14px;
+}
+
+.swipe-gallery{
+    display:flex;
+    gap:18px;
+
+    overflow-x:auto;
+
+    padding:10px 7vw 30px;
+
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+
+    scrollbar-width:none;
+}
+
+.swipe-gallery::-webkit-scrollbar{
+    display:none;
+}
+
+.gallery-card{
+    position:relative;
+
+    flex:0 0 74vw;
+
+    width:74vw;
+    max-width:520px;
+    height:530px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#d8d5cc;
+
+    scroll-snap-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.13);
+}
+
+.gallery-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:transform .7s ease;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.045);
+}
+
+.gallery-number{
+    position:absolute;
+    left:20px;
+    top:18px;
+
+    padding:7px 10px;
+
+    background:rgba(0,0,0,.42);
+    color:white;
+
+    border-radius:30px;
+
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.15em;
+}
+
+/* ================================
+   ORDER
+================================ */
+
+.order{
+    padding:125px 0;
+
+    background:var(--olive);
+    color:white;
+}
+
+.order-grid{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+
+    gap:95px;
+}
+
+.order-copy p{
+    max-width:420px;
+    margin-top:24px;
+
+    color:rgba(255,255,255,.58);
+
+    font-size:14px;
+}
+
+.steps{
+    border-top:1px solid rgba(255,255,255,.14);
+}
+
+.step{
+    display:grid;
+    grid-template-columns:55px 1fr;
+
+    padding:28px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.14);
+}
+
+.step-no{
+    color:#d1bc7c;
+
+    font-size:9px;
+    font-weight:900;
+    letter-spacing:.15em;
+}
+
+.step h3{
+    font-family:Georgia,serif;
+
+    font-size:28px;
+    font-weight:400;
+}
+
+.step p{
+    margin-top:7px;
+
+    color:rgba(255,255,255,.55);
+
+    font-size:13px;
+}
+
+/* ================================
+   DELIVERY
+================================ */
+
+.delivery{
+    padding:110px 0;
+
+    background:var(--cream);
+}
+
+.delivery-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    min-height:430px;
+
+    background:var(--sand);
+}
+
+.delivery-image{
+    min-height:430px;
+
+    background:
+        linear-gradient(
+            rgba(10,15,7,.12),
+            rgba(10,15,7,.12)
+        ),
+        url("farm.jpg") center/cover no-repeat;
+}
+
+.delivery-copy{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:60px;
+}
+
+.delivery-copy p{
+    max-width:450px;
+    margin-top:20px;
+
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+.delivery-note{
+    margin-top:28px;
+
+    color:#727b65;
+
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+}
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact{
+    padding:125px 0;
+
+    background:var(--paper);
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+
+    gap:90px;
+}
+
+.contact-copy p{
+    max-width:430px;
+    margin-top:23px;
+
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+.contact-links{
+    border-top:1px solid rgba(24,32,20,.15);
+}
+
+.contact-link{
+    display:grid;
+    grid-template-columns:100px 1fr auto;
+    align-items:center;
+
+    gap:15px;
+
+    padding:25px 0;
+
+    border-bottom:1px solid rgba(24,32,20,.15);
+
+    transition:.25s ease;
+}
+
+.contact-link:hover{
+    padding-left:7px;
+}
+
+.contact-label{
+    color:#858a7e;
+
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+}
+
+.contact-value{
+    font-family:Georgia,serif;
+
+    font-size:20px;
+}
+
+.contact-arrow{
+    font-size:16px;
+    color:#7d866f;
+}
+
+/* ================================
+   FINAL CTA
+================================ */
+
+.final-cta{
+    padding:95px 0;
+
+    background:#151c10;
+    color:white;
+
+    text-align:center;
+}
+
+.final-cta .section-tag{
+    color:#c8b879;
+}
+
+.final-cta h2{
+    max-width:750px;
+    margin:auto;
+
+    font-family:Georgia,serif;
+
+    font-size:clamp(42px,6vw,72px);
+    line-height:.95;
+    font-weight:400;
+    letter-spacing:-.045em;
+}
+
+.final-cta p{
+    max-width:520px;
+    margin:22px auto 0;
+
+    color:rgba(255,255,255,.55);
+
+    font-size:13px;
+}
+
+.final-cta .btn{
+    margin-top:30px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:30px;
+
+    padding:35px 6vw;
+
+    background:#0e130b;
+    color:white;
+}
+
+.footer-logo{
+    font-size:10px;
+    font-weight:900;
+    letter-spacing:.18em;
+}
+
+.footer-info{
+    color:rgba(255,255,255,.38);
+
+    font-size:8px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+}
+
+/* ================================
+   WHATSAPP
+================================ */
+
+.whatsapp-float{
+    position:fixed;
+    z-index:2000;
+
+    right:20px;
+    bottom:20px;
+
+    display:flex;
+    align-items:center;
+    gap:9px;
+
+    min-height:52px;
+
+    padding:0 19px;
+
+    border-radius:50px;
+
+    background:#26351d;
+    color:white;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.28);
+
+    font-size:8px;
+    font-weight:900;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.whatsapp-float:hover{
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,.34);
+}
+
+.wa-icon{
+    width:29px;
+    height:29px;
+
+    flex-shrink:0;
+
+    display:block;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media(max-width:850px){
+
+    .nav{
+        padding:17px 5vw;
+    }
+
+    .nav-links{
+        gap:13px;
+    }
+
+    .nav-links a{
+        font-size:7px;
+    }
+
+    .hero-content{
+        padding:150px 0 55px;
+    }
+
+    .hero h1{
+        font-size:clamp(51px,14vw,72px);
+    }
+
+    .hero-copy{
+        font-size:13px;
+    }
+
+    .hero-bottom{
+        gap:25px;
+        margin-top:48px;
+    }
+
+    .hero-stat strong{
+        font-size:21px;
+    }
+
+    .hero-stat span{
+        font-size:7px;
+    }
+
+    .intro{
+        padding:85px 0;
+    }
+
+    .intro-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .intro-image{
+        height:420px;
+    }
+
+    .offerings{
+        padding:85px 0;
+    }
+
+    .offer-header{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .offer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .offer-card{
+        min-height:400px;
+    }
+
+    .why{
+        padding:85px 0;
+    }
+
+    .why-top{
+        grid-template-columns:1fr;
+        gap:20px;
+        margin-bottom:50px;
+    }
+
+    .values-grid{
+        grid-template-columns:1fr;
+    }
+
+    .value{
+        padding:30px 0;
+    }
+
+    .value + .value{
+        padding-left:0;
+        border-left:none;
+        border-top:1px solid rgba(24,32,20,.15);
+    }
+
+    .gallery{
+        padding:85px 0;
+    }
+
+    .gallery-card{
+        flex-basis:84vw;
+        width:84vw;
+        height:450px;
+    }
+
+    .order{
+        padding:85px 0;
+    }
+
+    .order-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .delivery{
+        padding:75px 0;
+    }
+
+    .delivery-box{
+        grid-template-columns:1fr;
+    }
+
+    .delivery-image{
+        min-height:300px;
+    }
+
+    .delivery-copy{
+        padding:42px 30px;
+    }
+
+    .contact{
+        padding:85px 0;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .contact-link{
+        grid-template-columns:75px 1fr auto;
+    }
+
+    .contact-value{
+        font-size:16px;
+    }
+
+    .final-cta{
+        padding:80px 0;
+    }
+
+    footer{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+}
+
+@media(max-width:520px){
+
+    .nav-links{
+        gap:9px;
+    }
+
+    .nav-links a{
+        font-size:6.5px;
+    }
+
+    .logo{
+        font-size:11px;
+    }
+
+    .logo small{
+        font-size:6px;
+    }
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .hero-actions{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .hero-bottom{
+        gap:16px;
+    }
+
+    .hero-stat strong{
+        font-size:18px;
+    }
+
+    .hero-stat span{
+        font-size:6px;
+    }
+
+    .offer-card{
+        min-height:360px;
+        padding:28px;
+    }
+
+    .offer-card h3{
+        font-size:34px;
+    }
+
+    .gallery-card{
+        height:400px;
+    }
+
+    .contact-link{
+        grid-template-columns:70px 1fr auto;
+    }
+
+    .contact-value{
+        font-size:13px;
+    }
+
+    .whatsapp-float{
+        right:15px;
+        bottom:15px;
+
+        width:52px;
+        height:52px;
+
+        min-height:52px;
+
+        padding:0;
+
+        justify-content:center;
+        border-radius:50%;
+    }
+
+    .wa-text{
+        display:none;
+    }
+
+    .wa-icon{
+        width:31px;
+        height:31px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav class="nav">
+
+    <a href="#top" class="logo">
+        LAMINGTON
+        <small>HATCHERY • UNDERBERG</small>
+    </a>
+
+    <div class="nav-links">
+        <a href="#hatchery">Hatchery</a>
+        <a href="#stock">Stock</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero" id="top">
+
+    <div class="hero-content reveal">
+
+        <div class="eyebrow">
+            Underberg • KwaZulu-Natal
+        </div>
+
+        <h1>
+            Quality stock.<br>
+            Naturally raised.
+        </h1>
+
+        <p class="hero-copy">
+            Fertile hatching eggs and healthy young chicks,
+            carefully managed from the farm to your flock.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#stock" class="btn btn-light">
+                Explore Our Stock
+            </a>
+
+            <a href="#contact" class="btn btn-dark">
+                Contact The Hatchery
+            </a>
+
+        </div>
+
+        <div class="hero-bottom">
+
+            <div class="hero-stat">
+                <strong>01</strong>
+                <span>Local Hatchery</span>
+            </div>
+
+            <div class="hero-stat">
+                <strong>KZN</strong>
+                <span>KwaZulu-Natal</span>
+            </div>
+
+            <div class="hero-stat">
+                <strong>Farm</strong>
+                <span>Raised With Care</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- HATCHERY STORY -->
+
+<section class="intro" id="hatchery">
+
+    <div class="container intro-grid">
+
+        <div class="intro-text">
+
+            <div class="section-tag">
+                The Hatchery
+            </div>
+
+            <h2 class="section-title">
+                From the farm to your flock.
+            </h2>
+
+            <p>
+                Lamington Hatchery is built around a simple idea:
+                strong birds start with good care.
+            </p>
+
+            <p>
+                From fertile eggs through to young chicks,
+                every stage is handled with attention,
+                consistency and respect for the animals.
+            </p>
+
+            <p>
+                Based in Underberg, KwaZulu-Natal, Lamington
+                serves poultry keepers looking for quality stock
+                close to home.
+            </p>
+
+        </div>
+
+        <div class="intro-image">
+
+            <img
+                src="farm.jpg"
+                alt="Lamington Hatchery farm"
+            >
+
+            <div class="image-caption">
+                Underberg • KZN
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STOCK -->
+
+<section class="offerings" id="stock">
+
+    <div class="container">
+
+        <div class="offer-header">
+
+            <div>
+
+                <div class="section-tag" style="color:#bbc1ae;">
+                    Our Stock
+                </div>
+
+                <h2 class="section-title">
+                    Start strong.<br>
+                    Raise well.
+                </h2>
+
+            </div>
+
+            <p>
+                Carefully managed poultry stock for farmers,
+                smallholders and poultry keepers — whether
+                you're starting small or growing your flock.
+            </p>
+
+        </div>
+
+
+        <div class="offer-grid">
+
+            <article class="offer-card">
+
+                <span class="offer-number">
+                    01
+                </span>
+
+                <h3>
+                    Fertile<br>
+                    Hatching Eggs
+                </h3>
+
+                <p>
+                    Quality fertile eggs prepared for incubation
+                    and carefully handled from collection onward.
+                </p>
+
+                <a href="#contact" class="offer-link">
+                    Enquire About Eggs →
+                </a>
+
+            </article>
+
+
+            <article class="offer-card">
+
+                <span class="offer-number">
+                    02
+                </span>
+
+                <h3>
+                    Healthy<br>
+                    Young Chicks
+                </h3>
+
+                <p>
+                    Naturally raised chicks with attention given
+                    to their early care and development.
+                </p>
+
+                <a href="#contact" class="offer-link">
+                    Enquire About Chicks →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY LAMINGTON -->
+
+<section class="why">
+
+    <div class="container">
+
+        <div class="why-top">
+
+            <div>
+
+                <div class="section-tag">
+                    Why Lamington
+                </div>
+
+                <h2 class="section-title">
+                    Good stock begins with good care.
+                </h2>
+
+            </div>
+
+            <p>
+                We believe quality isn't something you add at
+                the end. It starts with how the birds are managed
+                from the very beginning.
+            </p>
+
+        </div>
+
+
+        <div class="values-grid">
+
+            <div class="value">
+
+                <div class="value-number">
+                    01 / QUALITY
+                </div>
+
+                <h3>
+                    Quality Stock
+                </h3>
+
+                <p>
+                    We focus on strong beginnings and carefully
+                    managed poultry stock.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-number">
+                    02 / CARE
+                </div>
+
+                <h3>
+                    Care From Day One
+                </h3>
+
+                <p>
+                    Every stage matters. Good care early on helps
+                    create healthier birds later.
+                </p>
+
+            </div>
+
+
+            <div class="value">
+
+                <div class="value-number">
+                    03 / LOCAL
+                </div>
+
+                <h3>
+                    Local & Accessible
+                </h3>
+
+                <p>
+                    Proudly based in Underberg and serving poultry
+                    keepers across KwaZulu-Natal.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="gallery">
+
+    <div class="gallery-heading">
+
+        <div class="section-tag">
+            Life At Lamington
+        </div>
+
+        <h2 class="section-title">
+            From our farm.
+        </h2>
+
+        <p>
+            A glimpse into the environment, stock and everyday
+            work behind Lamington Hatchery.
+        </p>
+
+    </div>
+
+
+    <div class="swipe-gallery">
+
+        <div class="gallery-card">
+            <img src="hatchery-1.jpg" alt="Lamington Hatchery">
+            <span class="gallery-number">01</span>
+        </div>
+
+        <div class="gallery-card">
+            <img src="hatchery-2.jpg" alt="Lamington Hatchery poultry">
+            <span class="gallery-number">02</span>
+        </div>
+
+        <div class="gallery-card">
+            <img src="hatchery-3.jpg" alt="Lamington Hatchery chicks">
+            <span class="gallery-number">03</span>
+        </div>
+
+        <div class="gallery-card">
+            <img src="hatchery-4.jpg" alt="Lamington Hatchery farm">
+            <span class="gallery-number">04</span>
+        </div>
+
+        <div class="gallery-card">
+            <img src="hatchery-5.jpg" alt="Lamington Hatchery poultry">
+            <span class="gallery-number">05</span>
+        </div>
+
+        <div class="gallery-card">
+            <img src="hatchery-6.jpg" alt="Lamington Hatchery chicks">
+            <span class="gallery-number">06</span>
+        </div>
+
+        <div class="gallery-card">
+            <img src="hatchery-7.jpg" alt="Lamington Hatchery">
+            <span class="gallery-number">07</span>
+        </div>
+
+        <div class="gallery-card">
+            <img src="hatchery-8.jpg" alt="Lamington Hatchery farm">
+            <span class="gallery-number">08</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ORDER -->
+
+<section class="order" id="order">
+
+    <div class="container order-grid">
+
+        <div class="order-copy">
+
+            <div class="section-tag" style="color:#c2c7b8;">
+                Ordering
+            </div>
+
+            <h2 class="section-title">
+                Getting your stock is simple.
+            </h2>
+
+            <p>
+                Contact Lamington Hatchery to check current
+                availability and arrange collection or delivery.
+            </p>
+
+            <a
+                href="https://wa.me/27795550007?text=Hi%20Lamington%20Hatchery%2C%20I%27d%20like%20to%20ask%20about%20your%20available%20stock."
+                target="_blank"
+                rel="noopener"
+                class="btn btn-light"
+                style="margin-top:30px;"
+            >
+                Check Availability
+            </a>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-no">
+                    01
+                </div>
+
+                <div>
+                    <h3>
+                        Choose Your Stock
+                    </h3>
+
+                    <p>
+                        Tell us whether you're looking for fertile
+                        hatching eggs or young chicks.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-no">
+                    02
+                </div>
+
+                <div>
+                    <h3>
+                        Check Availability
+                    </h3>
+
+                    <p>
+                        Availability can vary, so contact us before
+                        travelling or placing your order.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-no">
+                    03
+                </div>
+
+                <div>
+                    <h3>
+                        Arrange Collection
+                    </h3>
+
+                    <p>
+                        Arrange collection from the hatchery or
+                        discuss delivery options for your area.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DELIVERY -->
+
+<section class="delivery">
+
+    <div class="container">
+
+        <div class="delivery-box">
+
+            <div class="delivery-image"></div>
+
+            <div class="delivery-copy">
+
+                <div class="section-tag">
+                    Collection & Delivery
+                </div>
+
+                <h2 class="section-title">
+                    Underberg<br>
+                    & beyond.
+                </h2>
+
+                <p>
+                    Lamington Hatchery is based in Underberg,
+                    KwaZulu-Natal. Speak to us about collection
+                    or delivery arrangements for your area.
+                </p>
+
+                <div class="delivery-note">
+                    Delivery availability varies
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-copy">
+
+            <div class="section-tag">
+                Get In Touch
+            </div>
+
+            <h2 class="section-title">
+                Let's get your flock started.
+            </h2>
+
+            <p>
+                For stock availability, enquiries and ordering,
+                contact Lamington Hatchery directly.
+            </p>
+
+        </div>
+
+
+        <div class="contact-links">
+
+            <a
+                href="tel:+27795550007"
+                class="contact-link"
+            >
+
+                <span class="contact-label">
+                    Call
+                </span>
+
+                <span class="contact-value">
+                    079 555 0007
+                </span>
+
+                <span class="contact-arrow">
+                    →
+                </span>
+
+            </a>
+
+
+            <a
+                href="https://wa.me/27795550007?text=Hi%20Lamington%20Hatchery%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+            >
+
+                <span class="contact-label">
+                    WhatsApp
+                </span>
+
+                <span class="contact-value">
+                    Chat With Us
+                </span>
+
+                <span class="contact-arrow">
+                    →
+                </span>
+
+            </a>
+
+
+            <a
+                href="mailto:admin@lamingtonprojects.co.za"
+                class="contact-link"
+            >
+
+                <span class="contact-label">
+                    Email
+                </span>
+
+                <span class="contact-value">
+                    admin@lamingtonprojects.co.za
+                </span>
+
+                <span class="contact-arrow">
+                    →
+                </span>
+
+            </a>
+
+
+            <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+                class="contact-link"
+            >
+
+                <span class="contact-label">
+                    Facebook
+                </span>
+
+                <span class="contact-value">
+                    Visit Our Page
+                </span>
+
+                <span class="contact-arrow">
+                    →
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+
+    <div class="container">
+
+        <div class="section-tag">
+            Lamington Hatchery
+        </div>
+
+        <h2>
+            Quality beginnings for better flocks.
+        </h2>
+
+        <p>
+            Based in Underberg, KwaZulu-Natal.
+            Speak to us about available stock.
+        </p>
+
+        <a
+            href="https://wa.me/27795550007?text=Hi%20Lamington%20Hatchery%2C%20I%27d%20like%20to%20check%20your%20current%20stock%20availability."
+            target="_blank"
+            rel="noopener"
+            class="btn btn-light"
+        >
+            WhatsApp The Hatchery
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-logo">
+        LAMINGTON HATCHERY
+    </div>
+
+    <div class="footer-info">
+        UNDERBERG • KWAZULU-NATAL
+    </div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+    href="https://wa.me/27795550007?text=Hi%20Lamington%20Hatchery%2C%20I%27d%20like%20to%20make%20an%20enquiry."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat with Lamington Hatchery on WhatsApp"
+>
+
+    <svg
+        class="wa-icon"
+        viewBox="0 0 32 32"
+        aria-hidden="true"
+    >
+
+        <path
+            fill="currentColor"
+            d="M16 2.7A13.3 13.3 0 0 0 4.5 22.6L2.7 29.3l6.9-1.8A13.3 13.3 0 1 0 16 2.7Zm0 24.1a10.8 10.8 0 0 1-5.5-1.5l-.4-.2-4.1 1.1 1.1-4-.3-.4a10.8 10.8 0 1 1 9.2 5Zm5.9-8.1c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.4-3.9-3.2-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.6-.4Z"
+        />
+
+    </svg>
+
+    <span class="wa-text">
+        WhatsApp Us
+    </span>
+
+</a>
+
+</body>
+</html>
